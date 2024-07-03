@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="Pages\OrderReview.razor" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="$(BlazorVersion)" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Authentication" Version="$(BlazorVersion)" />
     <PackageReference Include="Microsoft.Extensions.Http" Version="$(AspNetCoreVersion)" />
@@ -16,6 +20,18 @@
   <ItemGroup>
     <ProjectReference Include="..\BlazingPizza.ComponentsLibrary\BlazingPizza.ComponentsLibrary.csproj" />
     <ProjectReference Include="..\BlazingPizza.Shared\BlazingPizza.Shared.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Pages\OrderReview.razor" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="Pages\OrderReview.razor" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Shared\OrderReview.razor" />
   </ItemGroup>
   
 </Project>
